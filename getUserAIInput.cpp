@@ -1,3 +1,16 @@
+/*
+ * @brief AI that will be the second player in a game mode with another user or computer (1P or 0P)
+ * 
+ * @param [inout] board - 2D array of board values
+ * @param [in] ydim - number of rows
+ * @param [in] xdim - number of columns
+ * @param [out] y - pointer to an integer that should be set with the chosen row 
+ * @param [out] x - pointer to an integer that should be set with the chosen column
+ * @param [in] currentPlayer - 0 = red, 1 = yellow
+ * @return true If there is an error (i.e. no possible place to play exists)
+ * @return false If a location was succesfully chosen.
+ */
+
 bool getUserAIInput(
   BoardValue** board, 
   int ydim, int xdim, 
